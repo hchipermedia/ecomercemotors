@@ -14,4 +14,6 @@
 
 get_header(); ?>
 aprendiendo a hacer una pagina en wordpress
+
+<h1>Hola Hugo, qué onda</h1>
 <?php get_footer(); ?>
