@@ -1,0 +1,140 @@
+.PrimalSlider {
+	/*height: 100vh;*/
+	border-bottom: 5px solid $support-color;
+
+	.PrimalSlider-contenido {
+		border: none;
+		margin: 0;
+		overflow: hidden;
+
+		.PrimalSlider-slide {
+			position: relative;
+
+			.PrimalSlider-slideImagen {
+				width: 100%;
+				height: 100vh;
+			}
+
+			.PrimalSlider-slideCaption {
+				text-shadow: 1px 2px #000;
+				text-align: center;
+				color: white;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				padding-bottom: 4rem;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,1+100 */
+				background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+				@media (max-width: $desktop-width) {
+					padding-bottom: 3rem;
+				}
+				@media (max-width: $smaller-width) {
+					padding: 0;
+					height: 100%;
+				}
+
+				.PrimalSlider-slideTitulo {
+					padding-bottom: .8rem;
+					font-size: 4.5rem;
+					@media (max-width: $desktop-width) {
+						font-size: 3rem;
+					}
+					@media (max-width: $tablet-width) {
+						font-size: 2rem;
+					}
+				}
+
+				.PrimalSlider-slideSubtitulo {
+					margin-bottom: 1.5rem;
+					padding: 0;
+					text-transform: uppercase;
+					font-size: 2rem;
+					@media (max-width: $desktop-width) {
+						font-size: 1.5rem;
+					}
+					@media (max-width: $tablet-width) {
+						font-size: 1rem;
+					}
+				}
+
+				.PrimalSlider-slideBoton {
+					border: 2px #fff solid;
+					padding: .3rem .8rem .5rem;
+					font-size: 20px;
+					color: #fff;
+					font-weight: bold;
+					border-radius: 3px;
+					text-shadow: none;
+					@include transicion ();
+
+					&:hover {
+						background: #00BBE7;
+						color: white;
+						border: 2px #00BBE7 solid;
+					}
+				}
+			}
+		}
+
+
+		.flex-control-nav {
+			bottom: 1rem;
+			@media (max-width: $desktop-width) {
+				bottom: 0;
+			}
+			@media (max-width: $smaller-width) {
+				display: none;
+			}
+			
+			a {
+				width: 25px;
+				height: 25px;
+				border: 2px solid $extra-color;
+				background: $extra-color;
+				-webkit-box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.45);
+				-moz-box-shadow:    inset 1px 1px 4px 0px rgba(0, 0, 0, 0.45);
+				box-shadow:         inset 1px 1px 4px 0px rgba(0, 0, 0, 0.45);
+			}
+
+			.flex-active {
+				background: $main-color-light;
+			}
+		}
+
+		.flex-direction-nav {
+			
+			a {
+				font-size: 0;
+				display: block;
+				height: 100%;
+				top: 0;
+				width: 80px;
+			}
+
+			.flex-prev {
+				left: 0 !important;
+				background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0px, transparent 100%);
+				background-repeat: repeat-x;
+			}
+
+			.flex-next {
+				right: 0 !important;
+				background-image: linear-gradient(to right, transparent 0px, rgba(0, 0, 0, 0.5) 100%);
+				background-repeat: repeat-x;
+			}
+
+			.flex-nav-prev,.flex-nav-next {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+

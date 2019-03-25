@@ -1,0 +1,53 @@
+.MeteoroContact {
+	position: relative;
+	overflow: hidden;
+	
+	.MeteoroContact-mapa {
+
+		iframe {
+    		pointer-events: none;
+			width: 100% !important;
+			height: 80vh !important;
+		}
+	}
+
+	.MeteoroContact-contenido {
+		overflow: visible;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		.MeteoroContact-formulario {
+			width: 50%;
+			padding: 1rem;
+			float: left;
+			/*@include fancy-box-shadow; */
+		}
+
+		.MeteoroContact-datos {
+			width: 30%;
+			margin-top: 5%;
+			float: right;
+			background: white;
+			padding: 1rem;
+			@include redondea();
+			@include fancy-box-shadow;
+
+			h2 {
+				margin: 0;
+				padding: 1rem 0;
+				border-bottom: 3px dotted #CCCCCC;
+			} 
+
+			p {
+				padding: .5rem;
+
+				i {
+					margin-right: .5rem;
+				}
+			}
+		}
+	}
+}

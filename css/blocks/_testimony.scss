@@ -1,0 +1,61 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+
+.PrimalTestimony {
+	padding-top: 6rem;
+	
+	.PrimalTestimony-contenido {
+		// Responsive
+		@media (max-width: $desktop-width) {
+			padding: 1.5rem;
+		}
+		.PrimalTestimony-titulo {
+			color: $main-color-dark;
+		}
+		.PrimalTestimony-subtitulo {
+			margin: 0 0 3rem;
+		}
+		.PrimalTestimony-block {
+			display: block;
+			float: left;
+			width: 45%;
+			margin: 0 1.5% 3rem;	
+			padding: .75rem;
+			position: relative;
+			
+			// Responsive
+			@media (max-width: $tablet-width) {
+				width: 100%;
+				margin: 0 0 3rem;
+			}
+			.PrimalTestimony-blockFigure {
+				position: absolute;
+				font-size: 2.5rem;
+			}
+			.PrimalTestimony-blockCita {
+				border: none;
+				margin: 0 0 1.5rem;
+				padding: 0;
+				font-family: Georgia;
+				font-style: italic;
+				font-size: 1.25rem;
+				line-height: 1.25;
+				padding-left: 3rem;
+			}
+			.PrimalTestimony-blockAuthor {
+				font-weight: bold;
+				padding-left: 1.5rem;
+				line-height: 1.15;
+
+				&:before {
+					content: '—';
+				}
+			}
+			.PrimalTestimony-blockMeta {
+				font-weight: normal;
+			}
+		}
+	}
+}
+

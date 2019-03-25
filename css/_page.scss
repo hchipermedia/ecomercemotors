@@ -1,0 +1,170 @@
+/*------------------------------------------------*/
+/*---------------------[PAGE]---------------------*/
+/*------------------------------------------------*/
+
+.Page {
+	width: 100%;
+	vertical-align: top;
+	display: inline-block;
+	margin: 0 0 3rem;
+
+	@media (max-width: $tablet-width ) {
+		width: 100%;
+		padding: 1.5rem;
+	}
+	
+	.Page-featuredImage {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+
+	.Page-titulo {
+
+	}
+}
+
+
+.elegirnos {
+	background: none;
+	color: initial;
+	text-align: center !important;
+
+	.elegirnos-titulo {
+		margin-bottom: 2rem;
+	}
+
+	.elegirnos-columnas {
+		overflow: hidden;
+		text-align: center !important;
+
+		.elegirnos-columna {
+			display: inline-block;
+			vertical-align: text-top;
+			width: 33%;
+			padding: 1.5rem 3rem;
+			float: none;
+			background: #fff;
+			// height: 345px;
+			position: relative;
+			@include transicion();
+
+			&:hover {
+				background: #F7F7F8;
+
+				&:after {
+					width: 100%;
+				}
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				width: 30%;
+				height: 2px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				background: #000559;
+				@include transicion(.2s);
+			}
+
+			@media (max-width: $tablet-width) {
+				padding: 1rem 1.5rem;
+				width: 30%;
+			}
+
+			@media (max-width: $smaller-width) {
+				width: 90%;
+				height: auto;
+				margin-bottom: 2rem;
+			}
+
+			figure {
+				margin-bottom: 1rem;
+
+				img {
+					max-width: 80px;
+				}
+			}
+
+			h2 {
+				font-size: 1.5rem;
+				font-weight: 600;
+				margin-bottom: 1.5rem;
+			}
+
+			div {
+				font-weight: 600;
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+.elegirnosPequenio {
+	background: none;
+	color: initial;
+	text-align: center !important;
+
+	.elegirnos-titulo {
+		margin-bottom: 2rem;
+	}
+
+	.elegirnosPequenio-columnas {
+		overflow: hidden;
+		text-align: left !important;
+
+		.elegirnos-columna {
+			display: inline-block;
+			vertical-align: text-top;
+			width: 33%;
+			padding: 0rem 1rem 1rem;
+			float: none;
+			background: #fff;
+			// height: 345px;
+			position: relative;
+
+			h2 {
+				margin-top: 0;
+			}
+
+			figure {
+
+				img {
+					display: inline-block;
+					width: 30%;
+					vertical-align: top;
+				}
+
+				figcaption {
+					display: inline-block;
+					width: 68%;
+					vertical-align: top;
+
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.SH-article {
+
+	h1, h2, h3, h4, h5 {
+		margin: 1.8rem 0;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 2rem;
+		margin-bottom: 2rem;
+		white-space: normal;
+		word-wrap: break-word;
+	}
+}

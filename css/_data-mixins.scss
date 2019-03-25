@@ -1,0 +1,128 @@
+/*-----------------------------------------------*/
+/* Variables Globales */
+/*-----------------------------------------------*/
+
+/* Fuentes
+------------*/
+$global-font: "Open Sans";
+$main-font: "Open Sans";
+$support-font: "Open Sans";
+
+
+/* Colores
+------------*/
+$body-bg: 				#ffffff;
+$header-bg: 			#edeeee;
+$footer-bg: 			#ffffff;
+
+$link-color: 			#0055aa;
+$link-hover-color: 		#2579cd;
+$text-color:   			#212121;	// color de texto base, principalmete usado en parrafos
+$support-text-color: 	#666666;
+
+$main-color:        	#0155ab;	// color principal de la marca
+$main-color-dark:   	#002a64;	
+$main-color-light:  	#3187dd;
+$main-color-text:   	#FFFFFF;	// color de texto en contraste con el color principal de la marca
+
+$support-color:     	#ff7c06;	// color secundario de la marca
+$support-color-dark:	#9f4e04;
+$support-color-light:	#ffb606;
+$extra-color:			#eeeeee;
+
+$divider-color:        	#B6B6B6;	// color neutral, generalmente usado para divisiones
+
+$social-btn-color: 		#666666;	// color base de los botones sociales
+
+$nav-text-color:			$main-color;		
+$nav-bg-text-color:			none;
+$nav-text-color-hover:		$main-color-text;
+$nav-bg-text-color-hover: 	$main-color;
+$nav-text-color-active:		$main-color;
+$nav-bg-text-color-active:	none;
+
+
+/* Tamaños
+------------*/
+$header-height: 120px;
+$desktop-width: 1100px;
+$tablet-width: 880px;
+$smaller-width: 560px;
+
+
+/*-----------------------------------------------*/
+/* Mixins
+/*-----------------------------------------------*/
+// Para bordes redondos
+@mixin redondea($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+// Treansiciones
+@mixin transicion($tiempo: 0.5s, $efecto: ease-in-out) {
+	-webkit-transition: all $tiempo $efecto;
+	   -moz-transition: all $tiempo $efecto;
+		 -o-transition: all $tiempo $efecto;
+		    transition: all $tiempo $efecto; 
+}
+@mixin fastTransicion($tiempo: 0.2s, $efecto: ease-in-out) {
+	-webkit-transition: all $tiempo $efecto;
+	   -moz-transition: all $tiempo $efecto;
+		 -o-transition: all $tiempo $efecto;
+		    transition: all $tiempo $efecto; 
+}
+@mixin color-placeholder( $color-ph: #888 ) {
+	::-webkit-input-placeholder { color: $color-ph; }
+	:-moz-placeholder { /* Firefox 18- */   opacity: 1; color: $color-ph;  }
+	::-moz-placeholder {  /* Firefox 19+ */  opacity: 1;   color: $color-ph;  }
+	:-ms-input-placeholder {  color: $color-ph;  }
+}
+@mixin ul-base {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	display: inline-block;
+}
+@mixin fancy-box-shadow {
+	box-shadow: 0px 0px 1px 1px white inset, 0px 23px 21px -33px #000;
+}
+
+
+@mixin gray-fancy-box {
+	@include redondea;
+	background: #eee;
+	border:1px solid #d8d8d8;
+	padding: 1em;
+	box-shadow: 0px 0px 1px 1px white inset;
+	@include fancy-box-shadow;
+}
+
+@mixin gray-fancy-bg-color {
+	background: #f5f5f5; 
+	background: -moz-linear-gradient(top,  #f5f5f5 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#efefef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(top,  #f5f5f5 0%,#efefef 100%); /* W3C */
+	-pie-background: linear-gradient(top,  #f5f5f5 0%,#efefef 100%); 
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+/*-----------------------------------------------*/
+/* Funciones */
+/*-----------------------------------------------*/
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+
+

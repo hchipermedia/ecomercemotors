@@ -1,0 +1,84 @@
+.contacto {
+	padding: 3rem 2rem 0;
+	overflow: hidden;
+	@media (max-width: $smaller-width) {
+		padding: 0;
+	}
+
+	.contenido-contacto {
+
+		.datos {
+			float: left;
+			width: 40%;
+			padding-right: 1rem;
+			@media (max-width: $tablet-width) {
+				float: none;
+				width: 100%;
+				padding: 1rem;
+				text-align: center;
+			}
+			
+			h3 {
+
+				i {
+					margin-right: 1rem;
+				}
+			}
+			
+			a {
+				color: $text-color;
+
+				.fa-facebook-square {
+					&:hover {
+						color: #3B5998;
+					}
+
+				}
+
+				.fa-twitter-square {
+					&:hover {
+						color: #659FCB;
+					}
+
+				}
+
+				.fa-youtube-square {
+					&:hover {
+						color: #E12B28;
+					}
+
+				}
+
+				.fa-google-plus-square {
+					&:hover {
+						color: #DB4437;
+					}
+
+				}
+			}
+
+		}
+
+		.formulario {
+			float: left;
+			width: 60%;
+			padding-left: 1rem;
+			@media (max-width: $tablet-width) {
+				width: 100%;
+				padding: 1rem;
+			}
+		}
+
+		.mapa {
+			padding-top: 1rem;
+			@media (max-width: $tablet-width) {
+				padding: 1rem;
+			}
+
+			iframe {
+				width: 100% !important;
+				padding: 1rem 0;
+			}
+		}
+	}
+}

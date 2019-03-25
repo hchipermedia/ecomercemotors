@@ -1,0 +1,96 @@
+/*
+Theme Name: SH Base
+Theme URI: http://www.solucioneshipermedia.com/portafolio/
+Author: Soluciones Hipermedia
+Author URI: http://www.solucioneshipermedia.com/
+Description: Tema base Wordpress para desarrollo de proyectos de Soluciones Hipermedia
+Version: 3.0.0
+Text Domain: shbase
+*/ 
+
+/* Iniciales
+------------------------------------------*/
+@import "_data-mixins.scss";
+
+/* Extras
+------------------------------------------*/
+@import "support/_bootstrap.scss"; /* Bootstrap */
+@import "support/_animate.scss"; /* Librería de animaciones CSS */
+@import "support/_font-awesome.scss"; /* Font Awesome */
+@import "support/_fonts.scss"; /* Open Sans */
+@import "support/_flexslider.scss"; /* Flexslider 2 */
+@import "support/_utilidades.scss"; /* Clases utilitarias */
+
+
+/*Estilo del sistema de pagos*/
+// @import "sistema-pagos/_pagos.scss";
+// @import "sistema-pagos/_sistema-de-pagos.scss";
+
+
+/* Base
+------------------------------------------*/
+@import "_global.scss";
+@import "_header.scss";
+@import "_footer.scss";
+// @import "_forms.scss";
+@import "_articulos.scss";
+@import "_post.scss";
+@import "_page.scss";
+@import "_sidebar.scss";
+
+/* Bloques 
+------------------------------------------*/
+// @import "blocks/_cover.scss";
+// @import "blocks/_blocks.scss";
+
+// @import "blocks/_text.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_redes_sociales.scss";
+
+/*--Documentos*/
+// @import "blocks/_primal-docs.scss";
+
+/*--Testimonios*/
+// @import "blocks/_card-testimony.scss";
+// @import "blocks/_testimony.scss";
+
+/*--Sliders*/
+@import "blocks/_primal-slider.scss";
+// @import "blocks/_gallery-slider.scss";
+// @import "blocks/_news-slider.scss";
+// @import "blocks/_video-slider.scss";
+// @import "blocks/_filmstrip-slider.scss";
+
+/*--Quotes*/
+// @import "blocks/_starchi-quote.scss";
+
+/*--Gallery*/
+// @import "blocks/_primal-gallery.scss";
+
+/*--Tabs*/
+// @import "blocks/_primal-tabs.scss";
+
+/*--Precios*/
+// @import "blocks/_primal-pricing.scss";
+
+/*--Contacto*/
+@import "blocks/_primal-contact.scss";
+// @import "blocks/_complete-contact.scss";
+// @import "blocks/_meteoro-contact.scss";
+
+/*--Bloque con video background*/
+// @import "blocks/_video-background.scss";
+
+/*--Primal Footer*/
+@import "blocks/_primal-footer.scss";
+
+// @import "blocks/_primal-accordion.scss";
+
+/*--Formulario de contacto pro*/
+// @import "blocks/_shif.scss";
+
+
+/* La personalización directa comienza aquí
+-------------------------------------------------------------- */
+
+

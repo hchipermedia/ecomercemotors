@@ -1,0 +1,57 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+
+.StarchiQuote {
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: .8;
+	height: 35vh;
+	@media (max-width: $tablet-width) {
+		background-size: auto auto;
+		background-attachment: local; 
+	}
+
+	.StarchiQuote-contenido {
+		@media (max-width: $desktop-width) {
+			padding: 1.5rem;
+		}
+		@media (max-width: $tablet-width) {
+			padding: 0;
+		}
+
+		.StarchiQuote-texto {
+			text-align: center;
+			padding: 3rem 0;
+			@media (max-width: $smaller-width) {
+				padding: 0;
+			}
+					
+			.StarchiQuote-textoIcono {
+				font-size: 11rem;
+				color: white;
+				opacity: .3;
+				font-style: italic;
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+			}
+
+			.StarchiQuote-textoCita {
+				text-shadow: 1px 1px black;
+				font-style: italic;
+				color: white;
+				font-size: 3rem;
+				@media (max-width: $smaller-width) {
+					font-size: 1.8rem;
+					margin-top: 5%;
+				}
+			}
+		}
+	}
+}

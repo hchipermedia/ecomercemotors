@@ -1,0 +1,41 @@
+.VideoSlider {
+	@media (max-width: $tablet-width) {
+		width: 50%;
+	}
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
+
+	.VideoSlider-contenido {
+		margin: 0;
+		border: none;
+
+		.VideoSlider-slide {
+
+			.VideoSlider-slideLink {
+
+				.VideoSlider-slideThumb {
+
+				}
+			}
+
+			.VideoSlider-slideCaption {
+				padding: .3rem 0;
+				position: relative;
+				text-align: center;
+				margin: 0;
+			}
+		}
+
+		.flex-control-nav {
+			position: relative;
+			bottom: 0;
+			padding-top: 1rem;
+			padding-bottom: .5rem;
+		}
+
+		.flex-direction-nav a { 
+			overflow: visible; 
+		}
+	}
+}

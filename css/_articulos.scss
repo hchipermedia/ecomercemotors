@@ -1,0 +1,66 @@
+/*------------------------------------------------*/
+/*--------------------[ARTICULOS]-----------------*/
+/*------------------------------------------------*/
+
+
+.Articulos {
+	width: 70%;
+	vertical-align: top;
+	display: inline-block;
+	margin: 0 0 3rem;
+
+	@media (max-width: $tablet-width ) {
+		width: 100%;
+		padding: 1.5rem;
+	}
+
+	.Articulos-titulo {
+		margin-bottom: 3rem;
+	}
+	
+	.ArticuloH {
+		margin-bottom: 2rem;
+		padding-bottom: .5rem;
+		border-bottom: 1px dotted #ccc;
+		
+		.ArticuloH-thumbnail {
+			width: 24%;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.ArticuloH-contenido {
+			vertical-align: top;
+			display: inline-block;
+
+			&.is-full {
+				width: 100%;
+			}
+
+			&.is-shared {
+				width: 75%;
+				padding-left: 2rem;
+			}
+
+			.ArticuloH-titulo {
+				margin: 0;
+				padding: 0;
+				font-size: 1.75rem;
+
+				a { color: #222; }
+			}
+
+			.ArticuloH-meta {
+				font-size: .9rem;
+				font-style: italic;
+				color: #666;
+				margin-bottom: .5rem;
+			}
+
+			.leerMas {
+				font-style: italic;				
+			}
+		}
+	}
+}
+

@@ -1,0 +1,68 @@
+/*--------------------------------------------------*/
+/*-------------------[REDES SOCIALES]------------------*/
+/*--------------------------------------------------*/
+
+// General
+#footer-compartir {
+	float: right;
+	padding: 30px 0px;	
+}
+.recomienda {
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #4d4d4d;
+}
+
+.bt-share {
+	padding: 0 .5em;
+	float: left;
+}
+
+// Iconos a las redes sociales de la marca
+.social a i.fa-facebook-square, #social-contacto a i.fa-facebook-square,
+.social a i.fa-twitter-square, #social-contacto a i.fa-twitter-square,
+.social a i.fa-youtube-square, #social-contacto a i.fa-youtube-square,
+.social a i.fa-google-plus-square, #social-contacto a i.fa-google-plus-square {
+	color: $social-btn-color;	
+	font-size: 2.6em;
+}
+.social a:hover i.fa-facebook-square, #social-contacto a:hover i.fa-facebook-square { color: #3B5998; }
+.social a:hover i.fa-twitter-square, #social-contacto a:hover i.fa-twitter-square { color: #55ACEE; }
+.social a:hover i.fa-youtube-square, #social-contacto a:hover i.fa-youtube-square { color: #CC181E; } 
+.social a:hover i.fa-google-plus-square, #social-contacto a:hover i.fa-google-plus-square { color: #DD4F3E; }
+
+
+/* Barras de botones para compartir en redes sociales 
+---------------------------------------------------------------- */
+
+// ANLI; Estilo de barra de botones para compartir 
+.anli-ss {
+	
+	a {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin: .25rem;
+		vertical-align: middle;
+		-o-transition: all .3s;
+		-moz-transition: all .3s;
+		-webkit-transition: all .3s;
+		-ms-transition: all .3s;	
+	}
+
+	a:hover { background-position: left -34px; }
+
+	.facebook { background: url(images/ss/anli/facebook.png) left top no-repeat; margin-right: 0;}
+	.twitter { background: url(images/ss/anli/twitter.png) left top no-repeat; }
+	.googleplus { background: url(images/ss/anli/googleplus.png) left top no-repeat; }
+	.linkedin { background: url(images/ss/anli/linkedin.png) left top no-repeat; }
+	.pinterest { background: url(images/ss/anli/pinterest.png) left top no-repeat; }		
+}
+
+
+
+
+
+
+

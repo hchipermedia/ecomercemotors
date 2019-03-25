@@ -1,0 +1,23 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+// PRIMAL
+.PrimalText {
+	// padding-top: 6rem;
+	
+	.PrimalText-contenido {
+		// Responsive
+		@media (max-width: $desktop-width) {
+			padding: 1.5rem;
+		}
+		.PrimalText-titulo {
+			color: $main-color-dark;
+		}
+		.PrimalText-subtitulo {
+			// margin: 0 0 3rem;
+		}
+		.PrimalText-texto {
+			
+		}
+	}
+}

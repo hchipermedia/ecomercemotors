@@ -1,0 +1,77 @@
+/*------------------------------------------------*/
+/*------------------[	]----------------------*/
+/*------------------------------------------------*/
+
+.PrimalTabs {
+	// padding: 2rem 0;
+
+	.PrimalTabs-contenido {
+		@media (max-width: $tablet-width) {
+			/*float: left;*/
+			width: 100%;
+			// margin-bottom: 1.5rem;
+		}
+
+		.PrimalTabs-Titulo {
+			color: $main-color-dark;
+			// font-size: 3rem;
+			text-align: center;
+		}
+
+		.PrimalTabs-Subtitulo {
+			// font-size: 1.5rem;
+			color: $main-color-light;
+		}
+
+		.PrimalTabs-tabs {
+			margin-top: 1rem;
+			-webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+			-moz-box-shadow:    1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+			box-shadow:         1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+
+			.PrimalTabs-tabsTitulo.active {
+				background: $main-color;
+
+				.PrimalTabs-tabsLink { 
+					background: none; 
+					border: none;
+					font-weight: bold;  
+				}
+			}
+
+			.PrimalTabs-tabsTitulo {
+				width: 33.333%;
+				background: $support-text-color;
+				border-right: 1px solid $extra-color;
+
+				&::before {
+					display: none;
+				}
+
+				.PrimalTabs-tabsLink {
+					border: none;
+					margin: 0;
+					font-weight: bold;
+					padding: 10px 3px;
+					text-align: center;
+					color: #ffffff;
+
+					&:hover {
+						border-radius: 0;
+						border: none;
+						background: none;
+					}
+				}
+			}
+		}
+		
+		.PrimalTabs-contenedor {
+			background: $extra-color;
+			padding: 1rem; 
+
+			.PrimalTabs-contenedorPanel {
+				
+			}
+		}
+	}
+}

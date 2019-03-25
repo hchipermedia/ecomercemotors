@@ -1,0 +1,21 @@
+.PrimalFooter {
+
+	.PrimalFooter-contenido {
+
+		.PrimalFooter-contenedor {
+			width: 25%;
+			float: left;
+			padding: .8rem .5rem;
+
+			&:nth-child(2n+2) {
+				width: 50%;
+			}
+
+			.PrimalFooter-contenedorDatos, .PrimalFooter-contenedorComplementos {
+				float: left;
+				width: 50%;
+				padding: 1rem;
+			}
+		}
+	}
+}

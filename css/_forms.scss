@@ -1,0 +1,130 @@
+/*--------------------------------------------------*/
+/*-------------------[FORMULARIOS]------------------*/
+/*--------------------------------------------------*/
+
+/* WP Forms */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number],
+input[type=tel],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number],
+input[type=tel] {
+	padding: 3px;
+}
+input#s {
+	background: url(images/search.png) no-repeat 5px 6px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 0.875em; /* 14px */
+	height: 43px;
+	padding: 5px 10px 5px 40px;
+}
+input#searchsubmit {
+	display: none;
+}
+
+/* FORM ERRORS */
+.error {
+	padding: .8em 1em !important;
+	border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border: 1px #8D0506 solid;
+	margin: 0 0 .8em;
+	color:  #8D0506;
+	font-size: .8em;
+	font-weight:normal;
+	   
+}
+
+/* =CF7 */
+form.suscripcion-boletin input[type="text"],
+form.suscripcion-boletin input[type="email"],
+form.suscripcion-boletin textarea,
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	background: #fff;
+	border: 1px solid #eee;
+	-moz-border-radius: 5px;
+	border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(00, 00, 00, .2);
+	-moz-box-shadow: inset 1px 1px 2px 2px rgba(00, 00, 00, .2);
+	box-shadow: inset 1px 1px 1px 1px rgba(00, 00, 00, .3);     
+	position: relative;
+	padding: 8px 0;
+	text-indent: 1em;
+	width: 100%;
+}
+
+form.wpcf7-form p, form.suscripcion-boletin p { margin-bottom: 1em; }
+form.suscripcion-boletin input[type="submit"],
+form.wpcf7-form input[type="submit"] {
+	background: #444;
+	border: none;
+	border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	color: #eee;
+	cursor: pointer;
+	font-size: 18px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	font-weight: bold;
+	padding: 8px 36px;
+	float:right;	
+}
+form.suscripcion-boletin input[type="submit"]:hover,
+form.wpcf7-form input[type="submit"]:hover {
+	background: #222;
+	color: #fff;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+/* color de las marcas de agua o input placeholders */
+@include color-placeholder( #888 );
+
+
+
+
+

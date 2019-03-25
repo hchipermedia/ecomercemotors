@@ -1,0 +1,47 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+// PRIMAL
+.PrimalContacto {
+	/*padding-top: 6rem;*/
+	/*background: #F4FFEF;*/
+	padding-top: 2rem;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.PrimalContacto-contenido {
+		text-align: center;
+
+		.PrimalContacto-formulario {
+			color: white;
+			padding: 3rem 0;
+
+			.nombre,.email {
+				display: inline-block;
+				width: 46%;
+				color: #3A362D;
+				@media (max-width: $tablet-width) {
+					width: 100%;
+				}
+			}
+
+			.nombre {
+				float: left;
+			}
+
+			.email {
+				float: right;
+			}
+
+			.enviar {
+
+				input {
+					@media (max-width: $tablet-width) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

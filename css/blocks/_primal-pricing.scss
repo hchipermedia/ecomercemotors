@@ -1,0 +1,69 @@
+.PrimalPricing {
+
+	.PrimalPricing-contenido {
+		padding: 1rem 0;
+		overflow: hidden;
+
+		.PrimalPricing-servicio {
+			padding-bottom: 1rem;
+			overflow: hidden;
+			float: left;
+			width: 22%;
+			margin: 0 1.5%;
+			background: white;
+			text-align: center;
+			@include redondea();
+
+			&:hover {
+				box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+				transform: scale(1.02, 1.02);
+				transition-timing-function: ease-out;
+				transition-duration: 250ms;
+			}
+
+			.PrimalPricing-servicioNombre {
+				margin: 0;
+				padding: 1rem;
+				color: white;
+				background: #0054A8;
+
+			}
+
+			.PrimalPricing-servicioPrecio {
+				margin: 0;
+				padding: .8rem 0;
+				background: #2679CC;
+				color: white;
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+
+			.PrimalPricing-servicioCaracteristica {
+				margin: 0;
+				padding: .5rem;
+				border-bottom: 3px dotted #575757;
+
+			}
+
+			.PrimalPricing-servicioDescripcion {
+				/*margin: 0;*/
+				padding: .8rem;
+				background: #E4E4E4;
+				text-align: left;
+
+			}
+
+			.PrimalPricing-servicioBoton {
+				background: #0054A8;
+				display: block;
+				color: white;
+				font-size: 1.5rem;
+				padding: .8rem 1rem;
+				width: 80%;
+				margin: 0 auto;
+				@include redondea();
+
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+
+.VideoBackground {
+	position: relative;
+	overflow: hidden;
+	@media (max-width: $tablet-width) {
+		background-size: auto auto;
+		background-attachment: local; 
+	}
+
+	.VideoBackground-contenido {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 2rem;
+		background: rgba(0,0,0,.7);
+		color: white;
+		text-shadow: 1px 2px black;
+		max-height: 80%;
+		margin: 5% auto;
+
+		@include redondea();
+		@media (max-width: $desktop-width) {
+			padding: 1.5rem;
+		}
+		@media (max-width: $tablet-width) {
+			padding: 0;
+		}
+
+		.VideoBackground-texto {
+			text-align: center;
+			padding: 3rem 0;
+			@media (max-width: $smaller-width) {
+				padding: 0;
+			}
+					
+			.VideoBackground-textoIcono {
+				font-size: 11rem;
+				color: white;
+				opacity: .3;
+				font-style: italic;
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+			}
+
+			.VideoBackground-textoCita {
+				text-shadow: 1px 1px black;
+				font-style: italic;
+				color: white;
+				font-size: 3rem;
+				@media (max-width: $smaller-width) {
+					font-size: 1.8rem;
+					margin-top: 5%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+
+.PrimalAccordion {
+
+	.PrimalAccordion-contenido {
+
+		.PrimalAccordion-Titulo {
+			color: $main-color-dark;
+			// font-size: 3rem;
+			text-align: center;
+		}
+
+		.PrimalAccordion-Subtitulo {
+			// font-size: 1.5rem;
+			color: $main-color-light;
+		}
+
+		.PrimalAccordion-accordion {
+			padding-top: 2rem;
+
+			.PrimalAccordion-accordionElement {
+				background: $extra-color;
+				// border: none;
+				// margin-bottom: .8rem;
+
+				.PrimalAccordion-accordionElement-title {
+					// background: $support-text-color;
+					// -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+					// -moz-box-shadow:    1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+					// box-shadow:         1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+					// border: none;
+					// border-radius: 0;
+					// color: #ffffff;
+					
+					h4 {
+
+						a {
+							// font-size: 1.5rem;
+							
+							&:hover {
+								// color: #ffffff;
+
+							}
+						}
+					}
+				}
+
+				.PrimalAccordion-accordionElement-content {
+					
+					.panel-body {
+						// border: none;
+					}
+				}
+			}
+		}
+	}
+}

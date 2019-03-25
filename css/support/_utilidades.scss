@@ -1,0 +1,64 @@
+.u-hsw {
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
+}
+
+.u-hmw {
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+}
+
+.u-fsw {
+	@media (max-width: $smaller-width) {
+		width: 100%;
+	}
+}
+
+.u-fmw {
+	@media (max-width: $tablet-width) {
+		width: 100%;
+	}
+}
+
+.u-btn {
+	background: $extra-color;
+	color: $support-text-color;
+	padding: .5rem 1rem;
+	font-size: 1.5rem;
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+	-moz-box-shadow:    1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+	box-shadow:         1px 1px 4px 0px rgba(0, 0, 0, 0.45) !important;
+	// min-width: 80%;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.u-center-box {
+	margin-left: auto;
+	margin-right: auto;
+}
+.u-remove {
+	display: none;
+}
+
+/* Contenedores
+----------------------------------------------- */
+.u-contenedor {
+	display: block;
+	overflow: hidden; 
+	clear: both;
+	width: $desktop-width;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+
+	@media (max-width: $desktop-width) {
+		max-width: $desktop-width;
+		width: 100%;
+	}
+}
+.u-contenedorCompleto {
+	width: 100%;
+	
+}

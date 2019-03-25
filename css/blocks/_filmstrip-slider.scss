@@ -1,0 +1,56 @@
+.FilmstripSlider {
+	
+	.FilmstripSlider-contenido { 
+		border: none; 
+		margin: 0; 
+
+		.flex-direction-nav {
+			
+			a {
+				font-size: 0;
+				display: block;
+				height: 100%;
+				top: 20px;
+				width: 80px;
+			}
+
+			.flex-prev {
+				left: 0 !important;
+				background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0px, transparent 100%);
+				background-repeat: repeat-x;
+			}
+
+			.flex-next {
+				right: 0 !important;
+				background-image: linear-gradient(to right, transparent 0px, rgba(0, 0, 0, 0.5) 100%);
+				background-repeat: repeat-x;
+			}
+		}
+
+		.FilmstripSlider-slide {
+			text-align: center;
+			@media (max-width: $tablet-width) {
+				
+			}
+
+			.FilmstripSlider-slideImagen {
+				background: #EBEBEB;
+				width: 100%;
+				display: block;
+				text-align: center;
+			}
+
+			.FilmstripSlider-slideTitulo {
+				color: #333;
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+
+			.FilmstripSlider-slideSubtitulo {
+				color: #444;
+				font-size: 1rem;
+				font-weight: normal;
+			}
+		}
+	}
+}
