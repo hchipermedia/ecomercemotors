@@ -17,4 +17,5 @@ aprendiendo a hacer una pagina en wordpress
 
 <h1>Hola Hugo, qué onda</h1>
 <h2>que onda carlos ¿como estas?</h2>
+<h3>bien, oye me pasas tu FB?</h3>
 <?php get_footer(); ?>
