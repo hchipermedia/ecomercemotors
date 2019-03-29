@@ -13,10 +13,16 @@
  */
 
 get_header(); ?>
-aprendiendo a hacer una pagina en wordpress
-
-<h1>Hola Hugo, qué onda</h1>
-<h2>que onda carlos ¿como estas?</h2>
-<h3>bien, oye me pasas tu FB?</h3>
-<h4>simon es Hugo corona</h4>
+<div class="HomeCover" style="background-image: url('<?php echo get_plantilla_url(''); ?>/images/ktm.jpg');">
+    <div class="HomeCover-content u-contenedor">
+        <div class="HomeCover-contentTextos">
+            <h3>Lorem ipsum dolor.</h3>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <div class="HomeCover-contentBotones">
+            <button class="btn btn-primary">Botón</button>
+            <button class="btn btn-primary">Botón</button>
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>

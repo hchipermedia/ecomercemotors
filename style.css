@@ -16475,3 +16475,7 @@ table {
 /*--Formulario de contacto pro*/
 /* La personalización directa comienza aquí
 -------------------------------------------------------------- */
+.HomeCover {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position: center; }
