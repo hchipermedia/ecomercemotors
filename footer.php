@@ -10,7 +10,7 @@
     <section class="u-contenedor">
     	
     	<aside class="Footer-creditos">
-    		<a class="Footer-firmaSH" href="http://www.solucioneshipermedia.com/">Soluciones Hipermedia | Desarrollo web</a>
+    		<a class="Footer-firmaSH" href="http://www.solucioneshipermedia.com/">Soluciones Hipermedia | Motociclismo</a>
     	</aside>
     </section>     
 
@@ -22,7 +22,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.height = "110%";
 }
 </script>
 
