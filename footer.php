@@ -22,7 +22,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.height = "110%";
+    document.getElementById("myNav").style.height = "0%";
 }
 </script>
 

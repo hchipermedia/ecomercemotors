@@ -46,16 +46,40 @@ get_header(); ?>
 	</a>
 </div>
 
-	<div class="HomeCover" style="background-image: url('<?php echo get_plantilla_url(''); ?>/images/ktm.jpg');">
-	    <div class="HomeCover-content u-contenedor">
-	        <div class="HomeCover-contentTextos">
-	            <h3>Lorem ipsum dolor.</h3>
-	            <h2>Lorem ipsum dolor sit amet.</h2>
-	        </div>
-	        <div class="HomeCover-contentBotones">
-	            <button class="btn btn-primary">Botón</button>
-	            <button class="btn btn-primary">Botón</button>
-	        </div>
-	    </div>
+<div class="HomeCover" style="background-image: url('<?php echo get_plantilla_url(''); ?>/images/ktm.jpg');">
+	<div class="HomeCover-content u-contenedor">
+		<div class="HomeCover-contentTextos">
+			<h3>.</h3>
+			<h2>.</h2>
+		</div>
+		<div class="HomeCover-contentBotones">
+			<button class="btn btn-primary">Botón</button>
+			<button class="btn btn-primary">Botón</button>
+		</div>
 	</div>
+</div>
+
+<!--pone tres imagenes  -->
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div class="col col-lg-3">
+      	<div>
+      		<img src="<?php echo get_plantilla_url(''); ?>/images/img2.jpg" class="d-block w-100" alt="...">
+      		<p>Esta es la primera imagen</p>
+      	</div>
+      </div>
+      <!--<div class="col col-lg-3">
+      	Variable width content
+      	<div>
+      		<img src="<?php echo get_plantilla_url(''); ?>/images/img1.jpg" class="d-block w-100" alt="...">
+      	</div>
+   	</div>-->
+   	<div class="col col-lg-3">
+      	<div>
+      		<img src="<?php echo get_plantilla_url(''); ?>/images/img3.jpg" class="d-block w-100" alt="...">
+      		<p>Esta es la segunda imagen</p>
+      	</div>
+      </div>
+   </div>
+</div>
 <?php get_footer(); ?>
