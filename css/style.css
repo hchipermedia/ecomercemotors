@@ -15374,9 +15374,9 @@ html[xmlns] .flexslider .slides {
   box-sizing: Border-box; }
 
 body {
-  background-image: url("images/background-piel.png");
   color: #212121;
   font-family: "Open Sans";
+  background: #ffffff;
   margin: 0;
   font-size: 1rem; }
 
@@ -15791,7 +15791,7 @@ table {
 ----------------------------------------------- */
 .Footer {
   padding-top: 2rem;
-  background: #0EEEEB; }
+  background: #ffffff; }
   .Footer .Footer-creditos {
     width: 100%;
     /* Firma SH  */ }
@@ -16475,30 +16475,8 @@ table {
 /*--Formulario de contacto pro*/
 /* La personalización directa comienza aquí
 -------------------------------------------------------------- */
-.Portada-4col a {
-  font-family: "open sans", Arial, helverica, sans-serif;
-  font-size: 4rem;
-  height: 20px;
-  width: 50%; }
-
-.row img {
-  width: 100%; }
-
-.Portada-4col a {
-  background-color: #f4511e;
-  text-align: center;
-  opacity: 0.1;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-
-.Portada-4col a:hover {
-  opacity: 1; }
-
-.HomeCover-contentBotones {
-  float: none;
-  text-align: center; }
-
-hgroup {
-  float: none;
-  text-align: center; }
+.HomeCover {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: red; }

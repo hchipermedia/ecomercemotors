@@ -95,8 +95,36 @@ Text Domain: shbase
 
 // aqui escribire los estilos del Home
 
-.HomeCover {
-	padding: 5rem 0;
-    background-repeat: no-repeat;
-    background-position: center;
+.Portada-4col a {
+	font-family: "open sans", Arial, helverica, sans-serif;
+	font-size: 4rem;
+	height: 20px;
+    width: 50%;
 }
+
+.row img{
+	width: 100%;
+}
+
+.Portada-4col {
+
+	a {
+		background-color:#f4511e;
+		text-align: center;
+		opacity: 0.1;
+		transition: 0.5s;
+	}
+
+	a:hover { opacity: 1; }
+}
+
+.HomeCover-contentBotones {
+	float:none;
+	text-align:center;
+}
+
+hgroup {
+	float:none;
+	text-align:center;
+}
+

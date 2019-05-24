@@ -8,13 +8,12 @@
 <footer class="Footer">	
     
     <section class="u-contenedor">
-    	<div class="row">
-    		<div class="col-4">
+    	<div class="row-footer">
+    		<div class="col">
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'activo', 'menu_id' => 'header-menu') ); ?>
     			
     		</div>
-    		<div class="col-4">m</div>
-    		<div class="col-4">g</div>
+    		<div class="col-2"><?php primalSocialShare(); ?></div>
     	</div>
     	<aside class="Footer-creditos">
     		<a class="Footer-firmaSH" href="http://www.solucioneshipermedia.com/">Soluciones Hipermedia | Motociclismo</a>

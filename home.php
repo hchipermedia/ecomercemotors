@@ -13,73 +13,139 @@
  */
 
 get_header(); ?>
-<!-- Este codigo es el que hace posible el slider
- ================================================== -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-      <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-   </ol>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="<?php echo get_plantilla_url(''); ?>/images/img1.jpg" class="d-block w-100" alt="...">
-			<div class="carousel-caption d-none d-md-block">
-				<h5>Vive al extremo</h5>
-				<p>la vida es un riesgo carnal</p>
+	<!-- Este codigo es el que hace posible el slider
+ 	================================================== -->
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+	      <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+	      <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+	   </ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="<?php echo get_plantilla_url(''); ?>/images/img1.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Vive al extremo</h5>
+					<p>la vida es un riesgo carnal</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="<?php echo get_plantilla_url(''); ?>/images/img2.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="<?php echo get_plantilla_url(''); ?>/images/img3.jpg" class="d-block w-100" alt="...">
 			</div>
 		</div>
-		<div class="carousel-item">
-			<img src="<?php echo get_plantilla_url(''); ?>/images/img2.jpg" class="d-block w-100" alt="...">
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!--<div class="HomeCover" style="background-image: url('<?php echo get_plantilla_url(''); ?>/images/ktm.jpg');">
+		<div class="HomeCover-content u-contenedor">
+			<div class="HomeCover-contentTextos">
+				<h3>.</h3>
+				<h2>.</h2>
+			</div>
+			<div class="HomeCover-contentBotones">
+				<button class="btn btn-primary">Botón</button>
+				<button class="btn btn-primary">Botón</button>
+			</div>
 		</div>
-		<div class="carousel-item">
-			<img src="<?php echo get_plantilla_url(''); ?>/images/img3.jpg" class="d-block w-100" alt="...">
+	</div>-->
+
+	<div class="Portada-4col">	
+
+		<div class="row">
+			<div class="col">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley-davidson-livewire.jpg"/>
+				<h2>
+					<a href="#">1</a>
+				</h2>
+			</div>
+			<div class="col">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg"/>
+				<h2>
+					<a href="#">2</a>
+				</h2>
+			</div>
+			<div class="col">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley3.jpg"/>
+				<h2>
+					<a href="#">3</a>
+				</h2>
+			</div>
+			<div class="col">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley4.jpg"/>
+				<h2>
+					<a href="#">4</a>
+				</h2>
+			</div>
 		</div>
 	</div>
-	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+		<!--seccion donde estara la lista de elentos-->
+	<div>
+		<hgroup><h2><a>DON'T MISS OUT TODAY'S GREAT EVENT</a></h2></hgroup>
+	</div>
+	<section id="article-list">
+		<article>
+			<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley5.jpg">
+			<h2><a href="#">Titulo de nuestro Articulo</a></h2>
+			<p class="date">10 de mayo de 2019<a href="#">Categoria 1</a></p>
+			<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet ligula justo, at vulputate odio malesuada et. Praesent sed bibendum enim, vel ultrices purus. Phasellus interdum, urna et tristique sodales, magna tortor volutpat ipsum, et blandit ipsum ante vitae purus. Nullam placerat nisl sem. Donec placerat nunc purus, vel vestibulum tellus consequat id. Morbi imperdiet lorem enim, non accumsan erat commodo sed. Integer volutpat libero vitae leo tincidunt, et eleifend mauris congue. Maecenas et felis lobortis, tristique turpis eu, placerat eros. Etiam ornare erat at mi pharetra, vel volutpat mauris iaculis.</p>
+	</section>
 
-<div class="HomeCover" style="background-image: url('<?php echo get_plantilla_url(''); ?>/images/ktm.jpg');">
-	<div class="HomeCover-content u-contenedor">
-		<div class="HomeCover-contentTextos">
-			<h3>.</h3>
-			<h2>.</h2>
-		</div>
-		<div class="HomeCover-contentBotones">
-			<button class="btn btn-primary">Botón</button>
-			<button class="btn btn-primary">Botón</button>
+	<div class="HomeCover-contentBotones">
+		<button class="btn-primary">VISIT EVENT</button>
+	</div>
+
+	<div>
+		<hgroup><h2><a>GALLERY</a></h2></hgroup>
+	</div>
+
+	<div class="container">	
+		<div class="row">
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley3.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley6.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
+			<div class="col-2">
+				<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley5.jpg"/>
+				<h2>
+					<a href="#">Uno</a>
+				</h2>
+			</div>
 		</div>
 	</div>
-</div>
-
-<!--pone tres imagenes  -->
-<div class="container">
-	<div class="row justify-content-md-center">
-		<div class="col col-lg-3">
-      	<div>
-      		<img src="<?php echo get_plantilla_url(''); ?>/images/img2.jpg" class="d-block w-100" alt="...">
-      		<p>Esta es la primera imagen</p>
-      	</div>
-      </div>
-      <!--<div class="col col-lg-3">
-      	Variable width content
-      	<div>
-      		<img src="<?php echo get_plantilla_url(''); ?>/images/img1.jpg" class="d-block w-100" alt="...">
-      	</div>
-   	</div>-->
-   	<div class="col col-lg-3">
-      	<div>
-      		<img src="<?php echo get_plantilla_url(''); ?>/images/img3.jpg" class="d-block w-100" alt="...">
-      		<p>Esta es la segunda imagen</p>
-      	</div>
-      </div>
-   </div>
-</div>
 <?php get_footer(); ?>

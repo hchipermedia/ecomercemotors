@@ -12,10 +12,10 @@ html {
 	// font-size: 16px; /* 16px */
 }
 body {
+	background-image:url('images/background-piel.png');
 	color: $text-color;
 	font-family: $global-font;
 	// line-height: 1.5em; /* 24px */
-	background: $body-bg;
 	margin: 0;
 	font-size: 1rem;
 }
