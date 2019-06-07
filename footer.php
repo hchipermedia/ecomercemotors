@@ -4,12 +4,13 @@
 ?>
 
 </main>
-
-<footer class="Footer">	
+<hr color="white" size=1 width="999">
+ <footer class="Footer">	
     
     <section class="u-contenedor">
     	<div class="row-footer">
     		<div class="col">
+                
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'activo', 'menu_id' => 'header-menu') ); ?>
     			
     		</div>

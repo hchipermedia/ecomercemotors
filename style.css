@@ -15652,6 +15652,12 @@ table {
   font-weight: bold;
   margin: 5px 0 10px; }
 
+.Container {
+  margin: 30px; }
+
+.Portada-4col {
+  margin: 30px; }
+
 /*------------------------------------------------*/
 /*-----------------[HEADER]-----------------------*/
 /*------------------------------------------------*/
@@ -15791,7 +15797,7 @@ table {
 ----------------------------------------------- */
 .Footer {
   padding-top: 2rem;
-  background: #0EEEEB; }
+  background: #151515; }
   .Footer .Footer-creditos {
     width: 100%;
     /* Firma SH  */ }
@@ -15804,7 +15810,7 @@ table {
       float: right;
       color: #7A7A7A;
       text-decoration: none;
-      font-size: .95rem;
+      font-size: 1rem;
       height: 30px;
       line-height: 30px;
       margin: 1rem 0; }
@@ -15897,106 +15903,158 @@ table {
     overflow: hidden;
     margin-bottom: 0; }
 
-.elegirnos {
-  background: none;
-  color: initial;
-  text-align: center !important; }
-  .elegirnos .elegirnos-titulo {
-    margin-bottom: 2rem; }
-  .elegirnos .elegirnos-columnas {
-    overflow: hidden;
-    text-align: center !important; }
-    .elegirnos .elegirnos-columnas .elegirnos-columna {
-      display: inline-block;
-      vertical-align: text-top;
-      width: 33%;
-      padding: 1.5rem 3rem;
-      float: none;
-      background: #fff;
-      position: relative;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      .elegirnos .elegirnos-columnas .elegirnos-columna:hover {
-        background: #F7F7F8; }
-        .elegirnos .elegirnos-columnas .elegirnos-columna:hover:after {
-          width: 100%; }
-      .elegirnos .elegirnos-columnas .elegirnos-columna:after {
-        content: "";
-        display: block;
-        width: 30%;
-        height: 2px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        background: #000559;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; }
-      @media (max-width: 880px) {
-        .elegirnos .elegirnos-columnas .elegirnos-columna {
-          padding: 1rem 1.5rem;
-          width: 30%; } }
-      @media (max-width: 560px) {
-        .elegirnos .elegirnos-columnas .elegirnos-columna {
-          width: 90%;
-          height: auto;
-          margin-bottom: 2rem; } }
-      .elegirnos .elegirnos-columnas .elegirnos-columna figure {
-        margin-bottom: 1rem; }
-        .elegirnos .elegirnos-columnas .elegirnos-columna figure img {
-          max-width: 80px; }
-      .elegirnos .elegirnos-columnas .elegirnos-columna h2 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem; }
-      .elegirnos .elegirnos-columnas .elegirnos-columna div {
-        font-weight: 600;
-        font-size: 0.875rem; }
+.page-nosotros {
+  color: #757575; }
 
-.elegirnosPequenio {
-  background: none;
-  color: initial;
-  text-align: center !important; }
-  .elegirnosPequenio .elegirnos-titulo {
-    margin-bottom: 2rem; }
-  .elegirnosPequenio .elegirnosPequenio-columnas {
-    overflow: hidden;
-    text-align: left !important; }
-    .elegirnosPequenio .elegirnosPequenio-columnas .elegirnos-columna {
-      display: inline-block;
-      vertical-align: text-top;
-      width: 33%;
-      padding: 0rem 1rem 1rem;
-      float: none;
-      background: #fff;
-      position: relative; }
-      .elegirnosPequenio .elegirnosPequenio-columnas .elegirnos-columna h2 {
-        margin-top: 0; }
-      .elegirnosPequenio .elegirnosPequenio-columnas .elegirnos-columna figure img {
-        display: inline-block;
-        width: 30%;
-        vertical-align: top; }
-      .elegirnosPequenio .elegirnosPequenio-columnas .elegirnos-columna figure figcaption {
-        display: inline-block;
-        width: 68%;
-        vertical-align: top; }
-        .elegirnosPequenio .elegirnosPequenio-columnas .elegirnos-columna figure figcaption p {
-          font-size: 1rem; }
+.Page-title {
+  float: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700; }
 
-.SH-article h1, .SH-article h2, .SH-article h3, .SH-article h4, .SH-article h5 {
-  margin: 1.8rem 0; }
+.page-sub {
+  color: #ffffff;
+  float: none;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700; }
 
-.SH-article p {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin-bottom: 2rem;
-  white-space: normal;
-  word-wrap: break-word; }
+/*Aqui pondre los estilos de la pagina nosotros*/
+.Nosotros-4col {
+  float: none;
+  text-align: center; }
+  .Nosotros-4col h2 {
+    padding: 20%;
+    color: #ffffff;
+    font-weight: 700;
+    height: 50px; }
+
+.Clientes-4col a {
+  font-family: "open sans", Arial, helverica, sans-serif;
+  font-size: 4rem;
+  width: 50%; }
+
+.row img {
+  width: 100%; }
+
+.Clientes-4col a {
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+  color: #fff; }
+
+.sub4 {
+  background-color: #2A2A2A; }
+  .sub4 a {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem; }
+  .sub4 a:hover {
+    color: #db2811; }
+  .sub4 p {
+    text-align: center; }
+
+/*Aqui pondre los estilos de la pagina Eventos*/
+.Eventos-4col a {
+  font-family: "open sans", Arial, helverica, sans-serif;
+  font-size: 4rem;
+  width: 50%; }
+
+.row img {
+  width: 100%; }
+
+.Eventos-4col a {
+  background-color: #2A2A2A;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+  color: #fff; }
+
+.Eventos-4col .col:hover a {
+  background: #DB2811; }
+
+/*Aqui pondre los estilos de la pagina Galeria*/
+.Galeria1-4col {
+  float: none;
+  text-align: center; }
+  .Galeria1-4col h2 {
+    padding: 20%;
+    color: #ffffff;
+    font-weight: 700;
+    height: 50px; }
+
+.Galeria1-4col a {
+  font-family: "open sans", Arial, helverica, sans-serif;
+  font-size: 4rem;
+  width: 50%; }
+
+.row img {
+  width: 100%; }
+
+.Galeria1-4col a {
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+  color: #fff; }
+
+.sub4 {
+  background-color: #2A2A2A; }
+  .sub4 a {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem; }
+  .sub4 a:hover {
+    color: #db2811; }
+  .sub4 p {
+    text-align: center; }
+
+/*Aqui pondre los estilos de la pagina Contacto*/
+.Formulario1 form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px; }
+
+.Formulario1 input, .Formulario1 textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+.Formulario1 textarea {
+  min-height: 100px;
+  max-height: 200px; }
+
+.Formulario1 #button {
+  background: #31384A;
+  color: #fff;
+  padding: 20px; }
+
+.Formulario1 #button:hover {
+  cursor: pointer; }
 
 /*------------------------------------------------*/
 /*---------------------[SIDEBAR]------------------*/
@@ -16478,27 +16536,64 @@ table {
 .Portada-4col a {
   font-family: "open sans", Arial, helverica, sans-serif;
   font-size: 4rem;
-  height: 20px;
   width: 50%; }
 
 .row img {
   width: 100%; }
 
 .Portada-4col a {
-  background-color: #f4511e;
+  background-color: #2A2A2A;
   text-align: center;
-  opacity: 0.1;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+  color: #fff; }
 
-.Portada-4col a:hover {
-  opacity: 1; }
+.Portada-4col .col:hover a {
+  background: #DB2811; }
 
-.HomeCover-contentBotones {
-  float: none;
-  text-align: center; }
+.btn-outline-danger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; }
 
 hgroup {
   float: none;
-  text-align: center; }
+  text-align: center;
+  color: #ffffff; }
+
+.Article-list img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.Article-list p {
+  float: none;
+  text-align: center;
+  color: #ffffff; }
+
+.Container a {
+  font-family: "open sans", Arial, helverica, sans-serif;
+  font-size: 0.8rem; }
+
+.sub1 a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #fff; }
+
+.sub2 a {
+  background: none;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 1.7rem; }
+
+.sub2 a:hover {
+  color: #db2811; }

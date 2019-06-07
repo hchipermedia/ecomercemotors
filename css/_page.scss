@@ -24,147 +24,221 @@
 
 	}
 }
+.page-nosotros{
 
+	color:#757575;
+}
 
-.elegirnos {
-	background: none;
-	color: initial;
-	text-align: center !important;
+.Page-title{
 
-	.elegirnos-titulo {
-		margin-bottom: 2rem;
+	float:none;
+	text-align:center;
+	color: #ffffff;
+	font-size: 60px;
+	font-weight: 700;	
+}
+
+.page-sub{
+
+	color: #ffffff;
+	float:none;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+}
+/*Aqui pondre los estilos de la pagina nosotros*/
+
+.Nosotros-4col{
+
+	float: none;
+	text-align: center;
+
+	h2{
+		padding: 20%;
+		color: #ffffff;
+		font-weight: 700;
+		height: 50px;
 	}
+}
 
-	.elegirnos-columnas {
-		overflow: hidden;
-		text-align: center !important;
+.Clientes-4col {
 
-		.elegirnos-columna {
-			display: inline-block;
-			vertical-align: text-top;
-			width: 33%;
-			padding: 1.5rem 3rem;
-			float: none;
-			background: #fff;
-			// height: 345px;
-			position: relative;
-			@include transicion();
+	a {
+		font-family: "open sans", Arial, helverica, sans-serif;
+		font-size: 4rem;
+    	width: 50%;
+	}
+}
 
-			&:hover {
-				background: #F7F7F8;
+.row img{
+	width: 100%;
 
-				&:after {
-					width: 100%;
-				}
-			}
+}
 
-			&:after {
-				content: "";
-				display: block;
-				width: 30%;
-				height: 2px;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				background: #000559;
-				@include transicion(.2s);
-			}
+.Clientes-4col{
 
-			@media (max-width: $tablet-width) {
-				padding: 1rem 1.5rem;
-				width: 30%;
-			}
+		a {
+		
+		text-align: center;
+		transition: 0.5s;
+		width: 100%;
+		display: block;
+		color: #fff;
+	}
+	
+}
+.sub4{
 
-			@media (max-width: $smaller-width) {
-				width: 90%;
-				height: auto;
-				margin-bottom: 2rem;
-			}
+	background-color:#2A2A2A;
 
-			figure {
-				margin-bottom: 1rem;
+	a{
+		
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	a:hover{
+		color:  #db2811;
+	}
+	p{
+		text-align: center;
+	}
+}
 
-				img {
-					max-width: 80px;
-				}
-			}
+/*Aqui pondre los estilos de la pagina Eventos*/
 
-			h2 {
-				font-size: 1.5rem;
-				font-weight: 600;
-				margin-bottom: 1.5rem;
-			}
+.Eventos-4col {
+	a {
+		font-family: "open sans", Arial, helverica, sans-serif;
+		font-size: 4rem;
+    	width: 50%;
+	}
+}
 
-			div {
-				font-weight: 600;
-				font-size: 0.875rem;
-			}
+.row img{
+	width: 100%;
+}
+
+
+.Eventos-4col {
+
+	a {
+		background-color:#2A2A2A;
+		text-align: center;
+		transition: 0.5s;
+		width: 100%;
+		display: block;
+		color: #fff;
+	}
+	
+	.col:hover { 
+		a{
+			background: #DB2811;
 		}
 	}
 }
 
-.elegirnosPequenio {
-	background: none;
-	color: initial;
-	text-align: center !important;
+/*Aqui pondre los estilos de la pagina Galeria*/
 
-	.elegirnos-titulo {
-		margin-bottom: 2rem;
-	}
 
-	.elegirnosPequenio-columnas {
-		overflow: hidden;
-		text-align: left !important;
+.Galeria1-4col{
 
-		.elegirnos-columna {
-			display: inline-block;
-			vertical-align: text-top;
-			width: 33%;
-			padding: 0rem 1rem 1rem;
-			float: none;
-			background: #fff;
-			// height: 345px;
-			position: relative;
+	float: none;
+	text-align: center;
 
-			h2 {
-				margin-top: 0;
-			}
-
-			figure {
-
-				img {
-					display: inline-block;
-					width: 30%;
-					vertical-align: top;
-				}
-
-				figcaption {
-					display: inline-block;
-					width: 68%;
-					vertical-align: top;
-
-					p {
-						font-size: 1rem;
-					}
-				}
-			}
-		}
+	h2{
+		padding: 20%;
+		color: #ffffff;
+		font-weight: 700;
+		height: 50px;
 	}
 }
 
-.SH-article {
+.Galeria1-4col {
 
-	h1, h2, h3, h4, h5 {
-		margin: 1.8rem 0;
+	a {
+		font-family: "open sans", Arial, helverica, sans-serif;
+		font-size: 4rem;
+    	width: 50%;
+	}
+}
+
+.row img{
+	width: 100%;
+
+}
+
+.Galeria1-4col{
+
+		a {
+		
+		text-align: center;
+		transition: 0.5s;
+		width: 100%;
+		display: block;
+		color: #fff;
+	}
+	
+}
+.sub4{
+
+	background-color:#2A2A2A;
+
+	a{
+		
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	a:hover{
+		color:  #db2811;
+	}
+	p{
+		text-align: center;
+	}
+}
+
+/*Aqui pondre los estilos de la pagina Contacto*/
+.Formulario1{
+
+	form {
+
+	width: 450px;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing:border-box;
+	margin-top: 20px;
+	border-radius:7px;
 	}
 
-	p {
-		font-size: 1rem;
-		line-height: 2rem;
-		margin-bottom: 2rem;
-		white-space: normal;
-		word-wrap: break-word;
+	input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
 	}
+
+	textarea {
+		min-height: 100px;
+		max-height: 200px;
+	}
+
+	#button {
+		background: #31384A;
+		color: #fff;
+		padding: 20px;
+	}
+	#button:hover {
+		cursor: pointer;
+	}
+	
 }

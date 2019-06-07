@@ -8,11 +8,12 @@
 
 .Footer {
 	padding-top: 2rem;	
-	background: #0EEEEB;
+	background: #151515;
+
 	
 
 	.Footer-creditos {
-		width: 100%; 
+		width: 100%;
 
 		/* Firma SH  */
 		.Footer-firmaSH  {	 
@@ -24,7 +25,7 @@
 			float: right;
 			color: #7A7A7A;
 			text-decoration: none;
-			font-size: .95rem;
+			font-size: 1rem;
 			height: 30px;
 			line-height: 30px;
 			margin: 1rem 0;
@@ -38,8 +39,6 @@
 			&:hover {	color: #333;	background-position: 0 bottom;  }
 		}
 	}
-	
-
 }
 
 

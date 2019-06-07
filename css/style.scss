@@ -95,36 +95,98 @@ Text Domain: shbase
 
 // aqui escribire los estilos del Home
 
-.Portada-4col a {
-	font-family: "open sans", Arial, helverica, sans-serif;
-	font-size: 4rem;
-	height: 20px;
-    width: 50%;
+.Portada-4col {
+	a {
+		font-family: "open sans", Arial, helverica, sans-serif;
+		font-size: 4rem;
+    	width: 50%;
+	}
 }
 
 .row img{
 	width: 100%;
 }
 
+
 .Portada-4col {
 
 	a {
-		background-color:#f4511e;
+		background-color:#2A2A2A;
 		text-align: center;
-		opacity: 0.1;
 		transition: 0.5s;
+		width: 100%;
+		display: block;
+		color: #fff;
 	}
-
-	a:hover { opacity: 1; }
+	
+	.col:hover { 
+		a{
+			background: #DB2811;
+		}
+	}
 }
 
-.HomeCover-contentBotones {
-	float:none;
-	text-align:center;
+
+.btn-outline-danger {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
 }
 
 hgroup {
 	float:none;
 	text-align:center;
+	color: #ffffff;
+}
+
+.Article-list {
+	img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+	}
+	p {
+		float: none;
+		text-align: center;
+		color: #ffffff;
+
+	}
+}
+
+.Container {
+
+
+	a{
+		font-family: "open sans", Arial, helverica, sans-serif;
+		font-size: 0.8rem;
+	}
+}
+
+.sub1 {
+
+	a{
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #fff;
+	}
+}
+
+.sub2{
+	a{
+		background: none;
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #fff;
+		font-size: 1.7rem;
+	}
+	a:hover{
+
+		color:  #db2811;
+	}
 }
 
