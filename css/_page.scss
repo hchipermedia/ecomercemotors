@@ -116,11 +116,12 @@
 		font-size: 4rem;
     	width: 50%;
 	}
-}
-
-.row img{
+	.row img{
 	width: 100%;
 }
+}
+
+
 
 
 .Eventos-4col {
@@ -164,12 +165,14 @@
 		font-size: 4rem;
     	width: 50%;
 	}
-}
+	.row img{
 
-.row img{
 	width: 100%;
-
+	
+	}
 }
+
+
 
 .Galeria1-4col{
 
@@ -241,4 +244,23 @@
 		cursor: pointer;
 	}
 	
+}
+
+.Clientes-4col {
+
+	.row {
+
+		@media (max-width: 600px) {
+			width: 50%;
+			max-width: 50%;
+			flex: 50%;
+
+		}
+
+		@media screen and (max-width: 375px) {
+			width: 100%;
+			max-width: 100%;
+			flex: 100%;			
+		}
+	}
 }

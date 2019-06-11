@@ -15,12 +15,16 @@ get_header(); ?>
 				<!-- Contenido -->
 				<?php the_content(); ?>
 				<div class="Formulario1">
-					<form>
-						<input type="text" id="Nombre" placeholder="Nombre">
-						<input type="text" id="Correo" placeholder="Correo">
-						<input type="text" id="Telefono" placeholder="Telefono">
-						<textarea id="mensaje" placeholder="Escribe aqui el mensaje"></textarea>
-						<input type="button" value="Enviar" id="button">
+					<form action="" method="POST">
+						<input type="text" name="nombre" id="Nombre" placeholder="Nombre">
+						<input type="text" name="correo" id="Correo" placeholder="Correo">
+						<select name="genero">
+							<option value="1">Hombre</option>
+							<option value="0">Mujer</option>
+						</select>
+						<input type="text" name="telefono" id="Telefono" placeholder="Telefono">
+						<textarea id="mensaje" name="mensaje" placeholder="Escribe aqui el mensaje"></textarea>
+						<input type="submit" name="enviar" value="Enviar" id="button">
 					</form>
 				</div>
 				<!-- Compartir en redes sociales -->
@@ -29,5 +33,19 @@ get_header(); ?>
 		</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
+<?php 
+
+	if (isset($_POST['enviar'])) {
+
+		echo '<h1 style="color:white">hola mundo</h1>';
+		echo '<h1 style="color:white">Nombre:'.$_POST['nombre'].'</h1>';
+		echo '<h1 style="color:white">Correo:'.$_POST['correo'].'</h1>';
+		echo '<h1 style="color:white">Telefono:'.$_POST['telefono'].'</h1>';
+		echo '<h1 style="color:white">Genero:'.$_POST['genero'].'</h1>';
+
+			# code...
+		}
+
+ ?>
 
 <?php get_footer(); ?>

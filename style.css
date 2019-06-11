@@ -15967,7 +15967,7 @@ table {
   font-size: 4rem;
   width: 50%; }
 
-.row img {
+.Eventos-4col .row img {
   width: 100%; }
 
 .Eventos-4col a {
@@ -15998,7 +15998,7 @@ table {
   font-size: 4rem;
   width: 50%; }
 
-.row img {
+.Galeria1-4col .row img {
   width: 100%; }
 
 .Galeria1-4col a {
@@ -16055,6 +16055,22 @@ table {
 
 .Formulario1 #button:hover {
   cursor: pointer; }
+
+@media (max-width: 600px) {
+  .Clientes-4col .row {
+    width: 50%;
+    max-width: 50%;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%; } }
+
+@media screen and (max-width: 375px) {
+  .Clientes-4col .row {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%; } }
 
 /*------------------------------------------------*/
 /*---------------------[SIDEBAR]------------------*/
@@ -16597,3 +16613,19 @@ hgroup {
 
 .sub2 a:hover {
   color: #db2811; }
+
+@media (max-width: 600px) {
+  .Container .col-2 {
+    width: 50%;
+    max-width: 50%;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%; } }
+
+@media screen and (max-width: 375px) {
+  .Container .col-2 {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%; } }

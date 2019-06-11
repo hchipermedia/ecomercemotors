@@ -190,3 +190,24 @@ hgroup {
 	}
 }
 
+
+
+.Container {
+
+	.col-2 {
+
+		@media (max-width: 600px) {
+			width: 50%;
+			max-width: 50%;
+			flex: 50%;
+
+		}
+
+		@media screen and (max-width: 375px) {
+			width: 100%;
+			max-width: 100%;
+			flex: 100%;			
+		}
+	}
+}
+
