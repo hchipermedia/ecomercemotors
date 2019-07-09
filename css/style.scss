@@ -96,10 +96,14 @@ Text Domain: shbase
 // aqui escribire los estilos del Home
 
 .Portada-4col {
+
 	a {
 		font-family: "open sans", Arial, helverica, sans-serif;
 		font-size: 4rem;
     	width: 50%;
+	}
+	.col {
+		margin: 0.5rem;
 	}
 }
 
@@ -141,6 +145,7 @@ hgroup {
 }
 
 .Article-list {
+	margin: 1rem;
 	img {
 	display: block;
   	margin-left: auto;
@@ -156,7 +161,6 @@ hgroup {
 }
 
 .Container {
-
 
 	a{
 		font-family: "open sans", Arial, helverica, sans-serif;

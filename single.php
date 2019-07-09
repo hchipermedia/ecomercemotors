@@ -12,9 +12,7 @@ get_header(); ?>
 			
 			<!-- Imágen destacada -->
 			<?php if ( has_post_thumbnail() ) : ?>
-				<figure class="Post-featuredImage">
-					<?php the_post_thumbnail( 'large' ); ?>
-				</figure>
+
 			<?php endif; ?>
 			<!-- Título del artículo -->
 			<h1 class="Post-title"><?php the_title(); ?></h1>
@@ -24,14 +22,9 @@ get_header(); ?>
 
 			<!-- Imprimo botón de pago -->
 			<?php paypalButtonSH(); ?>
-
-			<?php anliSocialShare(); ?>
-	   
 		</article>
 	<?php endwhile; // end of the loop. ?>
-	
-	<?php get_sidebar(); ?>
-
 </section>
-
 <?php get_footer(); ?>
+
+			<!--<?php anliSocialShare(); ?>funcion para las redes sociales-->

@@ -26,7 +26,7 @@ get_header(); ?>
 			<div class="carousel-item active">
 				<img src="<?php echo get_plantilla_url(''); ?>/images/harley-davidson-livewire.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Vive al extremo</h5>
+					<h3>Vive al extremo</h3>
 					<p>la vida es un riesgo carnal</p>
 				</div>
 			</div>
@@ -34,7 +34,7 @@ get_header(); ?>
 				<img src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="<?php echo get_plantilla_url(''); ?>/images/anciano.jpg" class="d-block w-100" alt="...">
+				<img src="<?php echo get_plantilla_url(''); ?>/images/harley-davidson-livewire.jpg" class="d-block w-100" alt="...">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -89,9 +89,7 @@ get_header(); ?>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet ligula justo, at vulputate odio malesuada et. Praesent sed bibendum enim, vel ultrices purus. Phasellus interdum, urna et tristique sodales, magna tortor volutpat ipsum, et blandit ipsum ante vitae purus. Nullam placerat nisl sem. Donec placerat nunc purus, vel vestibulum tellus consequat id. Morbi imperdiet lorem enim, non accumsan erat commodo sed. Integer volutpat libero vitae leo tincidunt, et eleifend mauris congue. Maecenas et felis lobortis, tristique turpis eu, placerat eros. Etiam ornare erat at mi pharetra, vel volutpat mauris iaculis.
 			</p>
 		</article>
-		
-		<button type="button" class="btn btn-outline-danger">Danger</button>
-		
+				
 	</div>
 	
 	<div>
@@ -164,4 +162,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<!--<div class="ligthbox">
+		<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/presion.jpg"/>
+	</div>-->
 <?php get_footer(); ?>

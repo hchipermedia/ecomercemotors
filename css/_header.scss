@@ -44,6 +44,7 @@
 	}
 	
 	.Header-contenido {
+
 		display: block;
 		height: 100%;
 		width: $desktop-width;
@@ -59,10 +60,11 @@
 
 		/* Logo */
 		.Header-logo {
-			padding: .5rem 0rem;
+			padding: .2rem 0rem;
 			display: block;
 			float: left;
 			max-width: 320px;
+
 
 			@media (max-width: $tablet-width) {
 				max-width: 100%;
@@ -71,6 +73,7 @@
 				padding: 1rem 0;
 			}
 			img {
+				max-width: 100%;
 				// max-width: 320px;
 				@include transicion();
 

@@ -15,7 +15,7 @@
 	
 	.Page-featuredImage {
 		width: 100%;
-		height: 200px;
+		height: 2	00px;
 		overflow: hidden;
 		margin-bottom: 0;
 	}
@@ -46,6 +46,7 @@
 	font-size: 50px;
 	font-weight: 700;
 }
+
 /*Aqui pondre los estilos de la pagina nosotros*/
 
 .Nosotros-4col{
@@ -68,12 +69,13 @@
 		font-size: 4rem;
     	width: 50%;
 	}
-}
 
-.row img{
+	.row img{
 	width: 100%;
-
+	}
 }
+
+
 
 .Clientes-4col{
 
@@ -85,9 +87,7 @@
 		display: block;
 		color: #fff;
 	}
-	
-}
-.sub4{
+	.sub4{
 
 	background-color:#2A2A2A;
 
@@ -107,11 +107,13 @@
 		text-align: center;
 	}
 }
+}
+
 
 /*Aqui pondre los estilos de la pagina Eventos*/
 
 .Eventos-4col {
-	a {
+	h2 {
 		font-family: "open sans", Arial, helverica, sans-serif;
 		font-size: 4rem;
     	width: 50%;
@@ -126,8 +128,8 @@
 
 .Eventos-4col {
 
-	a {
-		background-color:#2A2A2A;
+	h2 {
+		
 		text-align: center;
 		transition: 0.5s;
 		width: 100%;
@@ -136,7 +138,7 @@
 	}
 	
 	.col:hover { 
-		a{
+		h2{
 			background: #DB2811;
 		}
 	}
@@ -149,6 +151,7 @@
 
 	float: none;
 	text-align: center;
+	color: 	#fff;
 
 	h2{
 		padding: 20%;
@@ -156,24 +159,18 @@
 		font-weight: 700;
 		height: 50px;
 	}
-}
-
-.Galeria1-4col {
-
-	a {
+		a {
 		font-family: "open sans", Arial, helverica, sans-serif;
 		font-size: 4rem;
     	width: 50%;
 	}
+	
 	.row img{
 
 	width: 100%;
-	
+
 	}
 }
-
-
-
 .Galeria1-4col{
 
 		a {
@@ -188,8 +185,6 @@
 }
 .sub4{
 
-	background-color:#2A2A2A;
-
 	a{
 		
 		line-height: 50px;
@@ -203,6 +198,7 @@
 		color:  #db2811;
 	}
 	p{
+		color: #fff;
 		text-align: center;
 	}
 }
@@ -211,23 +207,26 @@
 .Formulario1{
 
 	form {
+		width: 450px;
+		margin: auto;
+		background: rgba(0,0,0,0.4);
+		padding: 10px 20px;
+		box-sizing:border-box;
+		margin-top: 20px;
+		border-radius:7px;
 
-	width: 450px;
-	margin: auto;
-	background: rgba(0,0,0,0.4);
-	padding: 10px 20px;
-	box-sizing:border-box;
-	margin-top: 20px;
-	border-radius:7px;
+		@media (max-width: 600px) {//Este media query indica que cuando la pantalla llegue a la cantidad especificada tomara el 100%
+			width: 100%;
+		}
 	}
 
 	input, textarea {
-	width: 100%;
-	margin-bottom: 20px;
-	padding: 7px;
-	box-sizing: border-box;
-	font-size: 17px;
-	border: none;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 7px;
+		box-sizing: border-box;
+		font-size: 17px;
+		border: none;
 	}
 
 	textarea {
@@ -242,10 +241,11 @@
 	}
 	#button:hover {
 		cursor: pointer;
-	}
-	
+	}	
 }
 
+
+/*media query*/
 .Clientes-4col {
 
 	.row {
@@ -264,3 +264,72 @@
 		}
 	}
 }
+
+.Galeria1-4col{
+	.row {
+
+		@media (max-width: 600px) {
+			width: 50%;
+			max-width: 50%;
+			flex: 50%;
+
+		}
+
+		@media screen and (max-width: 375px) {
+			width: 100%;
+			max-width: 100%;
+			flex: 100%;			
+		}
+	}
+}
+
+/*Aqui pondre los estilos de la pagina servicios*/
+
+.allservices {
+
+	float: none;
+	text-align: center;
+	a{
+		cursor: pointer;
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	a:hover{
+		color:  #db2811;
+	}
+	p{
+		color: 	white;
+		text-align: center;
+	}
+}
+.ligthbox{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background: rgba(0,0,0,.8);
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.btn-close{
+	width: 70px;
+	height: 7px;
+	background: #EA4545;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 12px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+/*Aqui pondre los estilos del fouter*/

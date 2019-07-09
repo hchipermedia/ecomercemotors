@@ -15,7 +15,7 @@ get_header(); ?>
 			<!-- Imágen destacada -->
 			<?php if ( has_post_thumbnail() ) : ?>
 				<figure class="Page-featuredImage">
-					<?php the_post_thumbnail( 'large' ); ?>
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 				</figure>
 			<?php else : ?>
 				<figure class="Page-featuredImage">

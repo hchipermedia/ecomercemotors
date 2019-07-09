@@ -15375,7 +15375,7 @@ html[xmlns] .flexslider .slides {
 
 body {
   background-image: url("images/background-piel.png");
-  color: #212121;
+  color: #ffffff;
   font-family: "Open Sans";
   margin: 0;
   font-size: 1rem; }
@@ -15714,7 +15714,7 @@ table {
         height: auto;
         display: inline-block; } }
     .Header .Header-contenido .Header-logo {
-      padding: .5rem 0rem;
+      padding: .2rem 0rem;
       display: block;
       float: left;
       max-width: 320px; }
@@ -15725,6 +15725,7 @@ table {
           text-align: center;
           padding: 1rem 0; } }
       .Header .Header-contenido .Header-logo img {
+        max-width: 100%;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -15796,8 +15797,9 @@ table {
 /* =Footer
 ----------------------------------------------- */
 .Footer {
-  padding-top: 2rem;
-  background: #151515; }
+  width: 100%;
+  color: #fff;
+  padding-top: 2rem; }
   .Footer .Footer-creditos {
     width: 100%;
     /* Firma SH  */ }
@@ -15822,6 +15824,68 @@ table {
       .Footer .Footer-creditos .Footer-firmaSH:hover {
         color: #333;
         background-position: 0 bottom; }
+
+.row-footer {
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.footer-columna {
+  width: calc(100% / 3);
+  text-align: justify; }
+
+.footer-columna:nth-child(2) {
+  padding: 20px; }
+
+h3 {
+  font-size: 32px;
+  color: #00C6EE;
+  margin-bottom: 20px; }
+
+.row-footer .footer-columna input[type="email"] {
+  border: none;
+  width: 100%;
+  border: 1px solid #00C6EE;
+  font-size: 14px;
+  padding: 10px; }
+
+.row-footer .footer-columna input[type="submit"] {
+  border: none;
+  background: #00C6EE;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.footer-columna span p {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 15px; }
+
+@media screen and (max-width: 750px) {
+  .row-footer .footer-columna {
+    padding: 0 10px; }
+  .row-footer .footer-columna h3 {
+    font-size: 28px; }
+  .row-footer .footer-columna p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 640px) {
+  .row-footer .footer-columna {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0; }
+  .row-footer .footer-columna h3 {
+    margin-bottom: 5px; }
+  .row-footer .footer-columna span {
+    display: block; } }
 
 /*------------------------------------------------*/
 /*--------------------[ARTICULOS]-----------------*/
@@ -15871,7 +15935,7 @@ table {
 /*---------------------[POST]---------------------*/
 /*------------------------------------------------*/
 .Post {
-  width: 70%;
+  width: 100%;
   vertical-align: top;
   display: inline-block;
   margin: 0 0 3rem; }
@@ -15899,7 +15963,7 @@ table {
       padding: 1.5rem; } }
   .Page .Page-featuredImage {
     width: 100%;
-    height: 200px;
+    height: 2	00px;
     overflow: hidden;
     margin-bottom: 0; }
 
@@ -15935,7 +15999,7 @@ table {
   font-size: 4rem;
   width: 50%; }
 
-.row img {
+.Clientes-4col .row img {
   width: 100%; }
 
 .Clientes-4col a {
@@ -15947,22 +16011,22 @@ table {
   display: block;
   color: #fff; }
 
-.sub4 {
+.Clientes-4col .sub4 {
   background-color: #2A2A2A; }
-  .sub4 a {
+  .Clientes-4col .sub4 a {
     line-height: 50px;
     text-align: center;
     width: 100%;
     display: block;
     color: #fff;
     font-size: 1.2rem; }
-  .sub4 a:hover {
+  .Clientes-4col .sub4 a:hover {
     color: #db2811; }
-  .sub4 p {
+  .Clientes-4col .sub4 p {
     text-align: center; }
 
 /*Aqui pondre los estilos de la pagina Eventos*/
-.Eventos-4col a {
+.Eventos-4col h2 {
   font-family: "open sans", Arial, helverica, sans-serif;
   font-size: 4rem;
   width: 50%; }
@@ -15970,8 +16034,7 @@ table {
 .Eventos-4col .row img {
   width: 100%; }
 
-.Eventos-4col a {
-  background-color: #2A2A2A;
+.Eventos-4col h2 {
   text-align: center;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -15980,26 +16043,25 @@ table {
   display: block;
   color: #fff; }
 
-.Eventos-4col .col:hover a {
+.Eventos-4col .col:hover h2 {
   background: #DB2811; }
 
 /*Aqui pondre los estilos de la pagina Galeria*/
 .Galeria1-4col {
   float: none;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
   .Galeria1-4col h2 {
     padding: 20%;
     color: #ffffff;
     font-weight: 700;
     height: 50px; }
-
-.Galeria1-4col a {
-  font-family: "open sans", Arial, helverica, sans-serif;
-  font-size: 4rem;
-  width: 50%; }
-
-.Galeria1-4col .row img {
-  width: 100%; }
+  .Galeria1-4col a {
+    font-family: "open sans", Arial, helverica, sans-serif;
+    font-size: 4rem;
+    width: 50%; }
+  .Galeria1-4col .row img {
+    width: 100%; }
 
 .Galeria1-4col a {
   text-align: center;
@@ -16010,19 +16072,20 @@ table {
   display: block;
   color: #fff; }
 
-.sub4 {
-  background-color: #2A2A2A; }
-  .sub4 a {
-    line-height: 50px;
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: #fff;
-    font-size: 1.2rem; }
-  .sub4 a:hover {
-    color: #db2811; }
-  .sub4 p {
-    text-align: center; }
+.sub4 a {
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 1.2rem; }
+
+.sub4 a:hover {
+  color: #db2811; }
+
+.sub4 p {
+  color: #fff;
+  text-align: center; }
 
 /*Aqui pondre los estilos de la pagina Contacto*/
 .Formulario1 form {
@@ -16034,6 +16097,9 @@ table {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px; }
+  @media (max-width: 600px) {
+    .Formulario1 form {
+      width: 100%; } }
 
 .Formulario1 input, .Formulario1 textarea {
   width: 100%;
@@ -16056,6 +16122,7 @@ table {
 .Formulario1 #button:hover {
   cursor: pointer; }
 
+/*media query*/
 @media (max-width: 600px) {
   .Clientes-4col .row {
     width: 50%;
@@ -16072,6 +16139,72 @@ table {
     -ms-flex: 100%;
     flex: 100%; } }
 
+@media (max-width: 600px) {
+  .Galeria1-4col .row {
+    width: 50%;
+    max-width: 50%;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%; } }
+
+@media screen and (max-width: 375px) {
+  .Galeria1-4col .row {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%; } }
+
+/*Aqui pondre los estilos de la pagina servicios*/
+.allservices {
+  float: none;
+  text-align: center; }
+  .allservices a {
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem; }
+  .allservices a:hover {
+    color: #db2811; }
+  .allservices p {
+    color: white;
+    text-align: center; }
+
+.ligthbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.btn-close {
+  width: 70px;
+  height: 7px;
+  background: #EA4545;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+  position: absolute;
+  top: 30px;
+  right: 30px; }
+
+/*Aqui pondre los estilos del fouter*/
 /*------------------------------------------------*/
 /*---------------------[SIDEBAR]------------------*/
 /*------------------------------------------------*/
@@ -16554,6 +16687,9 @@ table {
   font-size: 4rem;
   width: 50%; }
 
+.Portada-4col .col {
+  margin: 0.5rem; }
+
 .row img {
   width: 100%; }
 
@@ -16581,16 +16717,17 @@ hgroup {
   text-align: center;
   color: #ffffff; }
 
-.Article-list img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
-
-.Article-list p {
-  float: none;
-  text-align: center;
-  color: #ffffff; }
+.Article-list {
+  margin: 1rem; }
+  .Article-list img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  .Article-list p {
+    float: none;
+    text-align: center;
+    color: #ffffff; }
 
 .Container a {
   font-family: "open sans", Arial, helverica, sans-serif;

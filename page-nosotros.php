@@ -62,28 +62,28 @@ get_header(); ?>
 				<div class="Clientes-4col">	
 					<div class="row">
 						<div class="col">
-							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley-davidson-livewire.jpg"/>
+							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/honda.jpg"/>
 							<div class="sub4">
 								<a href="#">10 Primero</a>
 								<p>hola que tal hola que tal </p>
 							</div>
 						</div>
 						<div class="col">
-							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley2.jpg"/>
+							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/logoharley.jpg"/>
 							<div class="sub4">
 								<a href="#">8 Segundo</a>
 								<p>hola que tal hola que tal </p>
 							</div>
 						</div>
 						<div class="col">
-							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley3.jpg"/>
+							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/suzukilogo.jpg"/>
 							<div class="sub4">
 									<a href="#">21 Tercero</a>
 									<p>hola que tal hola que tal </p>
 							</div>
 						</div>
 						<div class="col">
-							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/harley4.jpg"/>
+							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/logobmw.jpg"/>
 							<div class="sub4">
 								<a href="#">17 PCuarto</a>
 								<p>hola que tal hola que tal </p>
