@@ -115,7 +115,7 @@
 .Eventos-4col {
 	h2 {
 		font-family: "open sans", Arial, helverica, sans-serif;
-		font-size: 4rem;
+		font-size: 2rem;
     	width: 50%;
 	}
 	.row img{
@@ -144,7 +144,7 @@
 	}
 }
 
-/*Aqui pondre los estilos de la pagina Galeria*/
+/*Aqui pondre los estilos de la pagina productos*/
 
 
 .Galeria1-4col{
@@ -183,6 +183,14 @@
 	}
 	
 }
+.col-4{
+
+	@media (max-width: 360px) {//Este media query indica que cuando la pantalla llegue a la cantidad especificada tomara el 100%
+			max-width: none;
+			flex: none;
+			width: 100%;
+		}
+}
 .sub4{
 
 	a{
@@ -193,6 +201,9 @@
 		display: block;
 		color: #fff;
 		font-size: 1.2rem;
+	}
+	h2{
+		font-size: 1rem;
 	}
 	a:hover{
 		color:  #db2811;
@@ -296,7 +307,7 @@
 		width: 100%;
 		display: block;
 		color: #fff;
-		font-size: 1.2rem;
+		font-size: 2rem;
 	}
 	a:hover{
 		color:  #db2811;
@@ -305,6 +316,9 @@
 		color: 	white;
 		text-align: center;
 	}
+}
+.services{
+	line-height: 20pt;
 }
 .ligthbox{
 	width: 100%;
@@ -331,5 +345,3 @@
 	top: 30px;
 	right: 30px;
 }
-
-/*Aqui pondre los estilos del fouter*/

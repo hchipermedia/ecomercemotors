@@ -19,7 +19,12 @@ get_header(); ?>
 						<div class="col-4">
 							<?php the_post_thumbnail('medium'); ?>
 							<div class="sub4">
-								<a href="<?php the_permalink() ?>"><h2> <?php the_title(); ?></h2></a> <!--en esta linea con la funcion the_permalink se dirije a la pagina del producto que hagas clic-->
+								<a href="<?php the_permalink() ?>">
+									
+									<h2> 
+										<?php the_title(); ?>	
+									</h2>
+								</a> <!--en esta linea con la funcion the_permalink se dirije a la pagina del producto que hagas clic-->
 								<p><?php echo wc_price( $price ); ?></p> <!-- con esta linea imprimes los precios de los productos-->
 							</div>
 						</div>

@@ -34,18 +34,54 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 </section>
 <?php 
+if (isset($_POST['enviar'])) {
 
-	if (isset($_POST['enviar'])) {
-
-		echo '<h1 style="color:white">hola mundo</h1>';
-		echo '<h1 style="color:white">Nombre:'.$_POST['nombre'].'</h1>';
-		echo '<h1 style="color:white">Correo:'.$_POST['correo'].'</h1>';
-		echo '<h1 style="color:white">Telefono:'.$_POST['telefono'].'</h1>';
-		echo '<h1 style="color:white">Genero:'.$_POST['genero'].'</h1>';
-
-			# code...
-		}
-
+	$cuerpoCorreo = '<table>
+						<thead>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Prospecto</th>
+							</tr>
+							<tr>
+								<td>
+									<strong>Nombre:'.$_POST['nombre'].'</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>Correo:'.$_POST['correo'].'</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>Telefono:'.$_POST['telefono'].'</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>Genero:'.$_POST['genero'].'</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>Asunto:'.$_POST['mensaje'].'</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>';
+	require 'inc/PHPMailer/PHPMailerAutoload.php';
+	// Correo al propietario
+	$correo = new PHPMailer;
+	$correo->setFrom('hhipermedia@gmail.com', 'Hugo');
+	$correo->addAddress('hchipermedia@gmail.com', 'Victor Hugo');
+	$correo->Subject = 'Correo de prueba';
+	// $correo->Body = 'Hola este es un correo de prueba';
+	$correo->Body = $cuerpoCorreo;
+	$correo->CharSet = 'utf8';
+	$correo->isHTML(true);
+	$correo->send();
+}
  ?>
 
 <?php get_footer(); ?>
