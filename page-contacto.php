@@ -19,8 +19,8 @@ get_header(); ?>
 						<input type="text" name="nombre" id="Nombre" placeholder="Nombre">
 						<input type="text" name="correo" id="Correo" placeholder="Correo">
 						<select name="genero">
-							<option value="1">Hombre</option>
-							<option value="0">Mujer</option>
+							<option value="Hombre">Hombre</option>
+							<option value="Mujer">Mujer</option>
 						</select>
 						<input type="text" name="telefono" id="Telefono" placeholder="Telefono">
 						<textarea id="mensaje" name="mensaje" placeholder="Escribe aqui el mensaje"></textarea>

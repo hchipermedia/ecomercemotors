@@ -20,7 +20,6 @@ get_header(); ?>
 							<?php the_post_thumbnail('medium'); ?>
 							<div class="sub4">
 								<a href="<?php the_permalink() ?>">
-									
 									<h2> 
 										<?php the_title(); ?>	
 									</h2>

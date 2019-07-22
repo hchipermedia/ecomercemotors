@@ -36,7 +36,7 @@ get_header(); ?>
 							<a href="<?php echo home_url(); ?>/mantenimiento-de-carburador"><!--funcion que imprime la pagina que se crea en wordpress-->
 							<img class="thumb" src="<?php echo get_plantilla_url(''); ?>/images/carburador.jpg"/>
 							<div class="services">
-								<a href="#">Mantenimiento carburador</a>
+								<a href="#">Mantenimiento </a>
 							</div>
 						</div>
 						<div class="col">
